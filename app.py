@@ -19,7 +19,7 @@ st.markdown("---")
 def cargar_datos():
     # Reemplaza con el nombre exacto de tu archivo CSV si es necesario
     try:
-        df = pd.read_csv("ECG_dataset_100_patients (1).xlsx - ECG_Patients.csv")
+        df = pd.read_csv("ECG_dataset_100_patients.csv")
         return df
     except FileNotFoundError:
         st.error("⚠️ No se encontró el archivo CSV. Asegúrate de que esté en la misma carpeta que este script.")
